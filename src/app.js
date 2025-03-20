@@ -2,7 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const { connectToDatabase } = require('./config/db');
+const { connectToDatabase } = require('./config/db-async');
 const bookRoutes = require('./routes/bookRoutes');
 
 // Inicjalizacja aplikacji Express
@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 });
 
 // Obsługa błędów
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
     console.error(err.stack);
     res.status(500).json({ message: 'Wystąpił błąd serwera', error: err.message });
 });
