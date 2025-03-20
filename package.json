@@ -1,0 +1,25 @@
+{
+  "name": "bazydanychii",
+  "version": "1.0.0",
+  "description": "Przykłady do wykładów z przedmiotu Bazy Danych II",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.4",
+    "sinon": "^19.0.4",
+    "supertest": "^7.0.0"
+  }
+}
